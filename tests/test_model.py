@@ -1,0 +1,6 @@
+from model.model import get_prediction
+
+TEST_STRING = 'Olhar para temas cruciais da sociedade, como racismo, é algo imperativo neste e em todos os momentos – e isso inclui games. Para abordar o tema, abro o espaço deste blog para quem tenha lugar de fala. Tainá Felix, produtora cultural e roteirista dos jogos A Nova Califórnia e Amora, da Game e Arte, assina o importantíssimo texto abaixo, traçando um detalhado histórico da representatividade negra nos jogos de forma precisa e informativa.Personagens negros nos videogames não são uma novidade. Temos a representação de corpos negros desde os anos 90. Contudo, tal presença é marcada por questões estruturais controversas, que têm a ver com quem cria, quem lucra, e quem está a fim de lacrar na indústria de games. Eu sou Tainá Felix, uma mulher negra, desenvolvedora independente de jogos e, a convite de Paulo –que cedeu seu espaço para minha voz– gostaria de apresentar uma linha do tempo de personagens negros icônicos, dos jogos triplo AAA aos indies nacionais, traçando algumas reflexões sob o ponto de vista da comunidade negra acerca da produção de games e dos impactos da representatividade para gamers e desenvolvedores.'
+
+def test_model():
+    assert get_prediction(TEST_STRING) == 'cultura'
